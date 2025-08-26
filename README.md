@@ -39,16 +39,16 @@ An iOS app to manage your fridge inventory efficiently, track expiration dates, 
 
 Swinject
  – Dependency injection
+ 
 SwiftUI
  – UI framework
+ 
 Core Data 
  – Local persistence
 
 ---
 
 ## Installation
-
-1. Clone the repository:
 
 ```bash
 git clone https://github.com/serdarv/hylastix_fridge.git

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="FridgeItemEntity" representedClassName=".FridgeItemEntity" syncable="YES">
+        <attribute name="bestBeforeDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="timeStored" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FridgeItemTypeEntity" inverseName="items" inverseEntity="FridgeItemTypeEntity"/>
+    </entity>
+    <entity name="FridgeItemTypeEntity" representedClassName=".FridgeItemTypeEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FridgeItemEntity" inverseName="type" inverseEntity="FridgeItemEntity"/>
+    </entity>
+</model>
